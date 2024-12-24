@@ -1,22 +1,23 @@
-# Hotel Management System
+# Hotel Management System - Backend
 
-A Hotel Management System developed using Spring Boot, MySQL, AWS, ReactJS, and Bootstrap. The system is designed to help hotel staff efficiently manage bookings, rooms, and customer information. This project provides a user-friendly interface for both admins and customers, allowing smooth operations for day-to-day hotel management tasks.
+A Hotel Management System backend developed using **Spring Boot**, **MySQL**, and deployed on **AWS**. The system is designed to manage room availability, bookings, and customer information through RESTful APIs for admins and customers.
 
 ## Features
 
-- **User Management**: Allows customers to register, log in, and manage their profiles.
-- **Booking System**: Enables customers to book, cancel, and view reservations.
-- **Room Management**: Admins can add, update, or remove rooms and set room availability.
-- **Payment Integration**: Handles the payment process for bookings.
-- **Admin Dashboard**: Provides admins with the ability to view all bookings, room availability, and customer information.
-- **Responsive UI**: Designed using ReactJS and Bootstrap for a mobile-friendly experience.
+- **Room Management**: Manage room availability, details, and room types.
+- **Booking Management**: Create, update, cancel, and view bookings.
+- **Customer Management**: Store and manage customer details.
+- **Admin Dashboard**: Allows admins to view, update, and manage all bookings, rooms, and customers.
+- **Payment Integration**: Handle the payment process for bookings.
+- **RESTful APIs**: Expose endpoints for interacting with room, booking, and customer data.
 
 ## Technologies Used
 
-- **Backend**: Spring Boot, MySQL
-- **Frontend**: ReactJS, Bootstrap
+- **Backend Framework**: Spring Boot
+- **Database**: MySQL
 - **Cloud**: AWS
 - **Version Control**: GitHub
+- **API Architecture**: RESTful APIs
 
 ## API Testing with Postman
 
@@ -51,7 +52,6 @@ For more details about the API endpoints, refer to the Postman collection or the
 
 - Java 11 or higher
 - MySQL 5.7 or higher
-- Node.js and npm
 - AWS Account (for deployment)
 
 ### Backend Setup
@@ -78,36 +78,20 @@ For more details about the API endpoints, refer to the Postman collection or the
     mvn spring-boot:run
     ```
 
-### Frontend Setup
+### Database Setup
 
-1. Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-
-2. Install the required dependencies:
-    ```bash
-    npm install
-    ```
-
-3. Start the React application:
-    ```bash
-    npm start
-    ```
-
-The frontend will now be running on `http://localhost:3000`.
+1. Set up a **MySQL** database (e.g., `hotel_management_system`).
+2. Apply the SQL scripts for creating the necessary tables (found in the `src/main/resources` folder).
 
 ## Usage
 
-1. Open your browser and go to `http://localhost:3000` for the frontend.
-2. You can log in as a customer or as an admin.
-3. As a customer, you can browse available rooms, make bookings, and view your reservation history.
-4. As an admin, you can manage room details, view all bookings, and update customer records.
-5. Use Postman to test the backend APIs as described above.
+1. Start the backend server by running the Spring Boot application.
+2. Use Postman to test the available API endpoints as described above.
+3. Access the APIs to manage rooms, bookings, and customer information.
 
 ## Contributing
 
-Feel free to fork the repository, create pull requests, and contribute to the development of the project. All contributions are welcome!
+Feel free to fork the repository, create feature branches, and submit pull requests. For any issues or bugs, open an issue in the repository.
 
 ## License
 
@@ -116,7 +100,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries or suggestions, please contact me at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Thank you for checking out the Hotel Management System! Enjoy using the system and feel free to contribute to making it even better.
